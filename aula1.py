@@ -1,3 +1,4 @@
+# Comentários
 # Essa hashtag(#) transforma tudo que tem depois dela em um comentário,
 # tudo que está escrito nesses comentários são ignorados pelo programa,
 # até caractereces especiais como: !@#$.
