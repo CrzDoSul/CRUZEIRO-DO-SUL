@@ -4,8 +4,16 @@ num = int(input("Digite quantos termos da sequência o programa deve calcular: "
 fibonacci = [1,1]
 count = 0
 while (count < num):
-    fibonacci.append(fibonacci[count] + fibonacci[count+1]) #criação do proximo termo
+    if num > 2:
+        fibonacci.append(fibonacci[count] + fibonacci[count+1]) #criação 
+        
     count += 1 #incremento do contador
 
-for i in range(num): #mostrar elementos
-    print(fibonacci[i])
+#Retirar termos de acordo com a situação - Precisei usar isso pois o array inicia startado com 2 termos [1, 1] 
+if (num == 1):
+    fibonacci.pop()
+elif(num >=3):
+    fibonacci.pop()
+    fibonacci.pop()
+
+print(fibonacci)
